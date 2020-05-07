@@ -57,7 +57,7 @@ public class User {
 		return false;
 	}
 	public String getName() {
-		// TODO Auto-generated method stub
+		
 		return this.firstName +" " + this.lastName;
 	}
 	public void printAccountSummary() {
@@ -72,16 +72,17 @@ public class User {
 		
 		return this.accounts.size();
 	}
+	// print the history
 	public void printAccountTransHistory(int accountIndex) {
 		
 		this.accounts.get(accountIndex).printHistory();
 	}
 	public double getAccountBalance(int accIndex) {
-		// TODO Auto-generated method stub
+		
 		return this.accounts.get(accIndex).getBalance();
 	}
 	public String getUUID(int acctIndex) {
-		// TODO Auto-generated method stub
+		
 		return this.accounts.get(acctIndex).getUUID();
 	}
 	public void addAccTransaction(int accIndex, double amount, String memo) {
