@@ -77,14 +77,17 @@ public class User {
 		
 		this.accounts.get(accountIndex).printHistory();
 	}
+	// print the balnace
 	public double getAccountBalance(int accIndex) {
 		
 		return this.accounts.get(accIndex).getBalance();
 	}
+	// print the UUID
 	public String getUUID(int acctIndex) {
 		
 		return this.accounts.get(acctIndex).getUUID();
 	}
+	// print the transaction
 	public void addAccTransaction(int accIndex, double amount, String memo) {
 		this.accounts.get(accIndex).addTransaction(amount,memo);
 	}
